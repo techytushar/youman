@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Simple webapp which uses the YouTube API to search for the videos which matches the given query.">
+    <meta name="author" content="Tushar Mittal">
+    <title>YouMan</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Patua+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container form-group">
+        <center>
+            <h1>YouMan</h1>
+            <h2>Type the search query below: </h2>
+            <input type = "text" class="querybox form-control" placeholder="Search Query" autocomplete="off" id="querybox">
+            <button class="search btn-primary" id="search_btn">Search</button><br><br>
+            <button class="sort btn" id="sort_alpha">Sort Alphabetically</button>
+            <button class="sort btn" id="sort_date">Sort by Date</button><br><br>
+        </center>
+    </div>
+    <div class="container content">
+    </div>
+    <div class="container footer">
+        <p>Made with <span style="color:rgb(249, 150, 150)">♥</span> by <a href="https://techytushar.github.io/" target="_blank">Tushar Mittal (@techytushar)</a></p>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/static/script.js"></script>
+</html>

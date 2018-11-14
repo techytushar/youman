@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(167, 26, 26);
+    font-family:'Open Sans', monospace;
+    padding: auto 20px;
+}
+h1{
+    font-family: "Patua One",sans-serif;
+    font-size: 50px;
+    color:white;
+}
+h2{
+    color:rgb(255, 205, 78);
+}
+.querybox{
+    width: 300px;
+    display: inline;
+    margin: 10px 5px;
+}
+.search{
+    margin: 10px 0;
+}
+.sort{
+    margin: 5px 10px;
+}
+.box{
+    background-color:rgb(238, 238, 238);
+    padding:5px 20px;
+    transition:box-shadow 150ms;
+    transition: transform 150ms;
+    margin: 20px;
+}
+.box:hover{
+    transform: translate(-2px,-4px);
+    box-shadow: 2px 5px 6px gray;
+}
+.box h2{
+    color:black;
+    font-size: 25px;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+.footer{
+    bottom:0px;
+    width:100%;
+    text-align: center;
+    background:transparent;
+    color:rgb(218, 218, 218);
+}
+.thumbnail{
+    margin: 5px 0 0 0;
+    height: 150px;
+    vertical-align: middle;
+}
