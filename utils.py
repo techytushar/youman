@@ -1,7 +1,7 @@
 from apiclient.discovery import build
 from apiclient.errors import HttpError
 
-YOUTUBE_API_KEY = "YOUR-API-KEY-HERE"
+YOUTUBE_API_KEY = "AIzaSyBgnP3629dVpbsdIFeMUvXaMr733q0I4hE"
 
 # gets videos data for youtube api and returns list of dicts 
 def search_yt(query):
@@ -11,7 +11,7 @@ def search_yt(query):
         type="video",
         order="relevance",
         part="id,snippet",
-        maxResults=10,
+        maxResults=15,
     ).execute()
 
     videos = []
