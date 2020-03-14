@@ -62,6 +62,12 @@ $("#sort_date").click(() => {
         display_video_blocks(videos);
     }
 })
+$("#sort_views").click(() => {
+    if(videos.length>0){
+        sort_views(videos);
+        display_video_blocks(videos);
+    }
+})
 
 //sorts list of videos alphabetically
 let sort_alpha = (videos) => {
@@ -83,6 +89,16 @@ let sort_date = (videos) => {
         if(a<b)
             return -1;
         if(a>b)
+            return 1;
+        return 0;
+    });
+    return videos;
+}
+let sort_views = (videos) => {
+    videos.sort((a,b) => {
+        if(a["views"] <b["views"])
+            return -1;
+        if(a["views"] >b["views"])
             return 1;
         return 0;
     });
